@@ -1,0 +1,184 @@
+/* Configurações Gerais do Site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4; /* Cinza bem claro para destacar os blocos brancos */
+    color: #132257; /* Azul escuro profundo (cor secundária do Arsenal) para os textos */
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Menu de Navegação */
+header {
+    background-color: #ffffff;
+    border-bottom: 4px solid #EF0107; /* O Vermelho oficial do Arsenal */
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    padding: 15px 20px !important;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Quando passa o mouse nos links do menu */
+header nav ul li a:hover {
+    color: #EF0107; /* Muda para o vermelho do Arsenal */
+}
+
+/* Conteúdo Principal */
+main {
+    background-color: #ffffff; /* Fundo branco limpo para os textos */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+h1 {
+    color: #EF0107; /* Título principal em Vermelho Arsenal */
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    border-left: 5px solid #063672; /* Detalhe em azul na lateral do título */
+    padding-left: 10px;
+}
+
+h2 {
+    color: #063672; /* Subtítulos em azul escuro clássico */
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Tabelas (Página de Currículo) */
+table th {
+    background-color: #EF0107 !important; /* Cabeçalho da tabela vermelho */
+    color: white !important;
+}
+
+/* Botões (Página de Contato e Acessibilidade) */
+button {
+    background-color: #EF0107 !important;
+    color: white !important;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #9C0104 !important; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 2px solid #EF0107;
+}
+
+/* Estilos para o Modo Noturno (Ativado via JavaScript) */
+body.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+/* Escurece o conteúdo principal, o menu E a barra de acessibilidade lá de cima */
+body.dark-mode main, 
+body.dark-mode header,
+body.dark-mode #accessibility-bar {
+    background-color: #2d2d2d !important;
+    border-bottom-color: #9C0104 !important; /* Vermelho escuro para combinar */
+}
+
+body.dark-mode header nav ul li a {
+    color: #ffffff !important;
+}
+
+body.dark-mode header nav ul li a:hover {
+    color: #EF0107 !important;
+}
+
+body.dark-mode p, 
+body.dark-mode h2, 
+body.dark-mode li {
+    color: #dddddd !important;
+}
+
+/* Estilos da Barra de Acessibilidade */
+#accessibility-bar {
+    background-color: #1e1e1e; /* Cor padrão no modo escuro */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos dos Botões da Barra */
+.btn-acc {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Destaque para o botão de modo noturno */
+#btn-dark-mode {
+    border: 1px solid #EF0107;
+    font-weight: bold;
+}
+
+/* ==========================================
+   BARRA DE ACESSIBILIDADE - CORES PADRÃO (MODO CLARO)
+   ========================================== */
+#accessibility-bar {
+    background-color: #f0f0f0; /* Fundo claro para a barra */
+    transition: background-color 0.3s ease;
+}
+
+.btn-acc {
+    background-color: #ffffff; /* Botões brancos */
+    color: #333333;            /* Texto escuro */
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#btn-dark-mode {
+    border: 1px solid #EF0107; /* Borda vermelha de destaque */
+    font-weight: bold;
+}
+
+/* ==========================================
+   QUANDO O BODY ESTIVER NO MODO ESCURO (.dark-mode)
+   ========================================== */
+body.dark-mode #accessibility-bar {
+    background-color: #1e1e1e; /* Barra fica escura */
+}
+
+body.dark-mode .btn-acc {
+    background-color: #2d2d2d; /* Botões ficam escuros */
+    color: #ffffff;            /* Texto fica branco */
+    border: 1px solid #333;
+}

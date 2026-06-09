@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Pessoal - Sobre Mim</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="accessibility-bar" style="padding: 12px; display: flex; gap: 15px; justify-content: center; border-bottom: 2px solid #EF0107;">
+        <button id="btn-dark-mode" class="btn-acc">🌓 Modo Noturno</button>
+        <button id="btn-font-increase" class="btn-acc">Aumentar Fonte (+)</button>
+        <button id="btn-font-decrease" class="btn-acc">Diminuir Fonte (-)</button>
+    </div>
+
+    <header>
+        <h1>Conheça mais sobre mim</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+                <li><a href="curriculum.html">Currículo</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="receitas.html">Receitas Favoritas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 20px; max-width: 800px; margin: 0 auto;">
+        
+        <section class="sobre-container" style="padding: 30px; border-radius: 8px; border-left: 5px solid #EF0107;">
+            <h2 style="color: #EF0107; margin-bottom: 20px;">Sobre Mim</h2>
+            
+            <p style="line-height: 1.6; margin-bottom: 15px;">
+                Olá! Meu nome é Vini. Sou estudante de Análise e Desenvolvimento de Sistemas na Universidade de Passo Fundo (UPF). Este blog é parte do meu aprendizado prático em desenvolvimento web e um trabalho final da disciplina.
+            </p>
+
+            <p style="line-height: 1.6; margin-bottom: 15px;">
+                Além de estudar, sou um grande apaixonado por esportes. Sempre digo que acompanhar esportes é a minha maior paixão desde criança. Claro que não consigo acompanhar tudo todos os dias, mas sempre que posso vocês podem ter certeza que estarei acompanhando. No futebol, acompanho tudo o que acontece na Premier League e sou um torcedor fanático do Arsenal. Também gosto muito de acompanhar basquete, futebol americano, hockey, fórmula 1 e dependendo da época do ano beisebol.
+            </p>
+
+            <p style="line-height: 1.6;">
+                A ideia deste espaço é fazer um trabalho, compartilhar alguns dos meus projetos e, claro, falar sobre as coisas que eu gosto.
+            </p>
+        </section>
+
+        <div class="carousel-container" style="max-width: 500px; margin: 30px auto; position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+            <div class="carousel-slides" style="display: flex; width: 300%; transition: transform 0.5s ease-in-out;">
+              <div class="carousel-slides" style="display: flex; width: 300%; transition: transform 0.5s ease-in-out;">
+    <img src="assets/perifl1.png" alt="Minha Foto 1" style="width: 33.333%; height: 350px; object-fit: cover;">
+    
+    <img src="assets/perfil2.png" alt="Minha Foto 2" style="width: 33.333%; height: 350px; object-fit: cover;">
+    
+    <img src="assets/perfil3.png" alt="Minha Foto 3" style="width: 33.333%; height: 350px; object-fit: cover;">
+</div>
+            </div>
+
+            <button id="prev-slide" class="btn-carousel" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(239, 1, 7, 0.7); color: white; border: none; font-size: 20px; padding: 10px 15px; cursor: pointer; border-radius: 50%; z-index: 10;">&#10094;</button>
+            <button id="next-slide" class="btn-carousel" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(239, 1, 7, 0.7); color: white; border: none; font-size: 20px; padding: 10px 15px; cursor: pointer; border-radius: 50%; z-index: 10;">&#10095;</button>
+        </div>
+
+        <section class="times-container" style="margin: 40px auto; padding: 20px; border-top: 2px solid #EF0107; text-align: center;">
+    <h3 style="color: #EF0107; margin-bottom: 25px; font-size: 24px;">Escudos & Paixões Esportivas</h3>
+    
+    <div class="grid-times" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+        
+        <div class="card-time" style="background: rgba(239, 1, 7, 0.1); padding: 15px; border-radius: 8px; width: 120px; border: 1px solid #EF0107;">
+            <img src="assets/logo-arsenal.png" alt="Arsenal FC" style="width: 80px; height: 80px; object-fit: contain;">
+            <p style="font-weight: bold; margin-top: 10px; font-size: 14px;">Arsenal</p>
+        </div>
+
+        <div class="card-time" style="background: rgba(0, 0, 0, 0.05); padding: 15px; border-radius: 8px; width: 120px; border: 1px solid #ccc;">
+            <img src="assets/logo-raptors.png" alt="Toronto Raptors" style="width: 80px; height: 80px; object-fit: contain;">
+            <p style="font-weight: bold; margin-top: 10px; font-size: 14px;">Raptors</p>
+        </div>
+
+        <div class="card-time" style="background: rgba(0, 0, 0, 0.05); padding: 15px; border-radius: 8px; width: 120px; border: 1px solid #ccc;">
+            <img src="assets/logo-leafs.png" alt="Toronto Maple Leafs" style="width: 80px; height: 80px; object-fit: contain;">
+            <p style="font-weight: bold; margin-top: 10px; font-size: 14px;">Maple Leafs</p>
+        </div>
+
+        <div class="card-time" style="background: rgba(0, 0, 0, 0.05); padding: 15px; border-radius: 8px; width: 120px; border: 1px solid #ccc;">
+            <img src="assets/logo-jays.png" alt="Toronto Blue Jays" style="width: 80px; height: 80px; object-fit: contain;">
+            <p style="font-weight: bold; margin-top: 10px; font-size: 14px;">Blue Jays</p>
+</div>
+
+            <div class="card-time" style="background: rgba(0, 0, 0, 0.05); padding: 15px; border-radius: 8px; width: 120px; border: 1px solid #ccc;">
+            <img src="assets/logo-eagles.png" alt="Philadelphia Eagles" style="width: 80px; height: 80px; object-fit: contain;">
+            <p style="font-weight: bold; margin-top: 10px; font-size: 14px;">Eagles</p>
+        </div>
+
+        </div>
+
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido por Vini - Faculdade de Tecnologia (ITEC) - UPF</p>
+    </footer>
+
+    <img src="assets/banner-arsenal.png" alt="Banner Arsenal" style="position: fixed; top: 52px; left: 10px; width: calc((100% - 780px) / 2); max-width: 280px; height: 820px; object-fit: cover; z-index: 10; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+    <img src="assets/banner-esportes.png" alt="Banner Esportes" style="position: fixed; top: 52px; right: 10px; width: calc((100% - 780px) / 2); max-width: 280px; height: 820px; object-fit: cover; z-index: 10; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <script src="js/script.js"></script>
+</body>
+</html>
